@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Jazz Survey Form</title>
+	</head>
+
+	<body>
+    <div id="top">
+		<h1 id="title">Jazz Survey Form</h1>
+
+		<p id="description">Let us know what your areas of interest are in jazz music</p>
+    
+    </div>
+
+		<form id="survey-form">
+
+			<label id="name-label" for="name">Name: </label>
+			
+			<input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+			<label id="email-label" for="email">Email: </label>
+			
+			<input id="email" type="email" name="email" placeholder="Enter your email" required>
+			
+
+			<label id="number-label" for="number">Number of years listening to jazz: </label>
+			
+			<input id="number" type="number" name="experience" placeholder="Years" min="0" max="100">
+			
+
+			<label id="dropdown-label" for="dropdown">Select your favorite jazz era:</label>
+			<select id="dropdown" name="favoriteEra" required>
+				<option disabled selected value>--Please choose below--</option>
+				<option value="early">Early Jazz - 1920s</option>
+				<option value="swing">Swing Era - 1930s-40s</option>
+				<option value="bebop">Bebop - 1940s-50s</option>
+				<option value="hardbop">Hard Bop - 1950s</option>
+				<option value="free">Free Jazz/Avant Garde - 1960s</option>
+				<option value="fusion">Jazz Fusion - 1960s-70s</option>
+				<option value="smooth">Smooth Jazz - 1980s-present</option>
+				<option value="modern">Modern Jazz</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label id="radio-label" for="radio">Do you play an instrument?
+				<label>Yes<input name="radio-buttons" type="radio" value="1"></label>
+				<label>No<input name="radio-buttons" type="radio" value="2"></label>
+			</label>
+
+			<label id="checkbox-label" for="instrument">Select your favorite jazz instruments: 
+				<label>Saxophone<input name="instrument" value="1" type="checkbox"></label>
+				<label>Trumpet<input name="instrument" value="2" type="checkbox"></label>
+				<label>Trombone<input name="instrument" value="3" type="checkbox"></label>
+				<label>Piano<input name="instrument" value="4" type="checkbox"></label>
+				<label>Guitar<input name="instrument" value="5" type="checkbox"></label>
+				<label>Bass<input name="instrument" value="6" type="checkbox"></label>
+				<label>Drums<input name="instrument" value="7" type="checkbox"></label>
+				<label>Other<input name="instrument" value="8" type="checkbox"></label>
+			</label>
+      
+      		<label for="comments">Any additional thoughts on jazz? </label>
+      		
+      		<textarea id="comments" name="comment" placeholder="Comments?"></textarea>
+          
+        	<button id="submit" type="submit">Submit</button>
+
+		</form>
+
+	</body>
+
+</html>
