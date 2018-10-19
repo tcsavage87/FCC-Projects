@@ -4,13 +4,33 @@
 }
 
 #navbar {
-  position: fixed;
-  width: 300px;
+	position: fixed;
+	width: 300px;
   height: 100%;
   top: 0px;
   padding-top: 10px;
   text-align: center;
   border-right: solid black 1px;
+}
+
+#navbar ul {
+}
+
+#navbar li {
+  border: 1px solid black;
+  list-style: none;
+  width: 100%;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: grey;
+  margin: 10px;
+}
+
+#navbar a:hover {
+  color: red;
+  cursor: pointer;
 }
 
 #main-doc {
@@ -21,10 +41,26 @@
   margin-top: 2em;
 }
 
+#main-doc header {
+  text-align: left;
+}
+
+#main-doc article {
+  margin: 20px;
+}
+
+#main-doc ul, ol, li {
+  margin: 20px;
+}
+
+#main-doc p {
+  margin: 15px 20px 15px 0;
+}
+
 code {
   display:block;
   text-align: left;
   background-color:#f7f7f7;
-  padding:15px;
-  margin:10px;
+  padding:10px;
+  margin: 0 auto;
 }

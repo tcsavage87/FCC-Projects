@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+  	<title>HTML Documentation</title>
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<nav id="navbar">
 		<header>
 			<h1>HTML Documentation</h1>
 		</header>
 		<ul>
-			<a class="nav-link" href="Intro_to_HTML"><ul>Introduction to HTML</ul></a>
-			<a class="nav-link" href="Nesting_elements"><ul>Nesting Elements</ul></a>
-			<a class="nav-link" href="Block_inline"><ul>Block and Inline Elements</ul></a>
-			<a class="nav-link" href="Section_4"><ul>Section 4</ul></a>
-			<a class="nav-link" href="Section_5"><ul>Section 5</ul></a>
+			<a class="nav-link" href="#Introduction_to_HTML"><ul>Introduction to HTML</ul></a>
+			<a class="nav-link" href="#Nesting_Elements"><ul>Nesting Elements</ul></a>
+			<a class="nav-link" href="#Block_and_Inline_Elements"><ul>Block and Inline Elements</ul></a>
+			<a class="nav-link" href="#Attributes"><ul>Attributes</ul></a>
+			<a class="nav-link" href="#Comments"><ul>Comments</ul></a>
 		</ul>
 	</nav>
 
 	<main id="main-doc">
-		<section class="main-section" id="Intro_to_HTML">
+		<section class="main-section" id="Introduction_to_HTML">
 			<header>
 				<h2>Introduction to HTML</h2>
 			</header>
@@ -34,7 +40,7 @@
 			</article>
 		</section>
 
-		<section class="main-section" id="Nesting_elements">
+		<section class="main-section" id="Nesting_Elements">
 			<header>
 				<h2>Nesting Elements</h2>
 			</header>
@@ -49,7 +55,7 @@
 			</article>
 		</section>
 
-		<section class="main-section" id="Block_inline">
+		<section class="main-section" id="Block_and_Inline_Elements">
 			<header>
 				<h2>Block and Inline Elements</h2>
 			</header>
@@ -76,31 +82,43 @@
 
 		
 
-		<section class="main-section" id="Section_4">
+		<section class="main-section" id="Attributes">
 			<header>
-				<h2>Section 4</h2>
+				<h2>Attributes</h2>
 			</header>
 			<article>
-				<p></p>
-				<p></p>
-				<code></code>
-				<ul>
-					<li></li>
-					<li></li>
-				</ul>	
+				<p>Elements can also have attributes, which contain extra information about the element which you don't want to appear in the actual content. In this case, the class attribute allows you to give the element an identifying name that can be later used to target the element with style information and other things.</p>
+				<p>An attribute should have:</p>
+				<ol>
+					<li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes.)</li>
+					<li>The attribute name, followed by an equals sign.</li>
+					<li>An attribute value, with opening and closing quote marks wrapped around it.</li>
+				</ol>	
+				<code>
+					&lt;p class="example-class"&gt;My dog is very hungry&lt;/p&gt;
+				</code>
 			</article>
 		</section>
 
-		<section class="main-section" id="Section_5">
+		<section class="main-section" id="Comments">
 			<header>
-				<h2>Section 5</h2>
+				<h2>Comments</h2>
 			</header>
 			<article>
-				<p></p>
-				<p></p>
-				<code></code>
+				<p>In HTML, as with most programming languages, there is a mechanism available to write comments in the code — comments are ignored by the browser and invisible to the user, and their purpose is to allow you to include comments in the code to say how your code works, what the different parts of the code do, etc. This can be very useful if you return to a code base that you've not worked on for six months, and can't remember what you did — or if you hand your code over to someone else to work on.</p>
+				<p>To turn a section of content inside your HTML file into a comment, you need to wrap it in the special markers &lt;!-- and --&gt;, for example:</p>
+				<code>
+					&lt;p&gt;I'm not a comment&lt;/p&gt;
+					<br>
+					&lt;!-- &lt;p&gt;I am a comment&lt;/p&gt; --&gt;
+				</code>
 			</article>
 		</section>
+    <p>All the information on this page is taken from the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN</a></p>
 	</main>
 
+	<footer>
+		
+	</footer>
+  </body>
 </html>
