@@ -3,20 +3,20 @@
 <html>
   <head>
   	<title>HTML Documentation</title>
+  	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<nav id="navbar">
 		<header>
 			<h1>HTML Documentation</h1>
 		</header>
 		<ul>
-			<a class="nav-link" href="#Introduction_to_HTML"><ul>Introduction to HTML</ul></a>
-			<a class="nav-link" href="#Nesting_Elements"><ul>Nesting Elements</ul></a>
-			<a class="nav-link" href="#Block_and_Inline_Elements"><ul>Block and Inline Elements</ul></a>
-			<a class="nav-link" href="#Attributes"><ul>Attributes</ul></a>
-			<a class="nav-link" href="#Comments"><ul>Comments</ul></a>
+			<li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+			<li><a class="nav-link" href="#Nesting_Elements">Nesting Elements</a></li>
+			<li><a class="nav-link" href="#Block_and_Inline_Elements">Block and Inline Elements</a></li>
+			<li><a class="nav-link" href="#Attributes">Attributes</a></li>
+			<li><a class="nav-link" href="#Comments">Comments</a></li>
 		</ul>
 	</nav>
 
@@ -29,10 +29,10 @@
 				<p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on.</p>
 				<p>The main parts of our element are:</p>
 				<ul>
-					<li>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the start of the paragraph is.</li>
-					<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</li>
-					<li>The content: This is the content of the element, which in this case is just text.</li>
-					<li>The element: The opening tag plus the closing tag plus the content equals the element.</li>
+					<li><strong>The opening tag</strong>: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the start of the paragraph is.</li>
+					<li><strong>The closing tag</strong>: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</li>
+					<li><strong>The content</strong>: This is the content of the element, which in this case is just text.</li>
+					<li><strong>The element</strong>: The opening tag plus the closing tag plus the content equals the element.</li>
 				</ul>
 				<code>
             		&lt;p&gt;My dog is hungry&lt;/p&gt;
@@ -46,11 +46,11 @@
 			</header>
 			<article>
 				<p>You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:</p>
-				<code>
-          &lt;p&gt;My dog is &lt;strong&gt;very&lt;/strong&gt; hungry.&lt;/p&gt;
-          <p><br></p>
-					<p>My dog is <strong>very</strong> hungry.</p>
-				</code>
+				<p><code>
+          			&lt;p&gt;My dog is &lt;strong&gt;very&lt;/strong&gt; hungry.&lt;/p&gt;
+      				<br><br>
+					My dog is <strong>very</strong> hungry.
+				</code></p>
 				<p>The elements have to open and close correctly, so they are clearly inside or outside one another. If they overlap, then your web browser will try to make a best guess at what you were trying to say, and you may well get unexpected results. So don't do it!</p>
 			</article>
 		</section>
@@ -65,11 +65,9 @@
 					<li>Block-level elements form a visible block on a page — they will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
 					<li>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lt;a&gt; element (hyperlink) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.</li>
 				</ul>
-				<code>
-					&lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;
-
-					&lt;p&gt;third&lt;/p&gt;&lt;p&gt;fourth&lt;/p&gt;
-				</code>
+				<p><code>
+          			&lt;em&gt;first&lt;/em&gt; &lt;em&gt;second&lt;/em&gt; &lt;p&gt;third&lt;/p&gt; &lt;p&gt;fourth&lt;/p&gt;
+				</code></p>
 				<p>&lt;em&gt; is an inline element, so the first two elements sit on the same line as one another with no space in between. On the other hand, &lt;p&gt; is a block-level element, so each element appears on a new line, with space above and below each (the spacing is due to default CSS styling that the browser applies to paragraphs).</p>
 		        <code>
 			        <em>first</em>
@@ -79,8 +77,6 @@
 		        </code>
 			</article>
 		</section>
-
-		
 
 		<section class="main-section" id="Attributes">
 			<header>
@@ -107,18 +103,18 @@
 			<article>
 				<p>In HTML, as with most programming languages, there is a mechanism available to write comments in the code — comments are ignored by the browser and invisible to the user, and their purpose is to allow you to include comments in the code to say how your code works, what the different parts of the code do, etc. This can be very useful if you return to a code base that you've not worked on for six months, and can't remember what you did — or if you hand your code over to someone else to work on.</p>
 				<p>To turn a section of content inside your HTML file into a comment, you need to wrap it in the special markers &lt;!-- and --&gt;, for example:</p>
-				<code>
-					&lt;p&gt;I'm not a comment&lt;/p&gt;
-					<br>
-					&lt;!-- &lt;p&gt;I am a comment&lt;/p&gt; --&gt;
-				</code>
+				<p><code>
+          			&lt;p&gt;I'm not a comment&lt;/p&gt;<br><br>&lt;!-- &lt;p&gt;I am a comment&lt;/p&gt; --&gt;
+        		</code></p>
 			</article>
 		</section>
-    <p>All the information on this page is taken from the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN</a></p>
+    
 	</main>
 
 	<footer>
-		
+		<p>All the information on this page is taken from the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN</a></p>
 	</footer>
+
   </body>
+  
 </html>
