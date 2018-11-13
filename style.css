@@ -1,5 +1,5 @@
 html {
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ccc;
@@ -21,45 +21,46 @@ header {
 }
 
 .logo img {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 2em;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 2em;
 }
- 
+
 header h1 {
   flex-direction: row;
-    color: #fff;
-    text-shadow: 1px 1px #8585ad;
-    float: clear;
-    margin: 0 auto;
+  color: #fff;
+  text-shadow: 2px 2px #8585ad;
+  float: clear;
+  margin: 0 auto;
 }
 
 nav ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-  
+
 nav ul li {
-    list-style: none;
-    padding: 1em;
+  list-style: none;
+  padding: 1em;
 }
-  
+
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 #right-edge {
   margin-right: 5em;
 }
-  
+
 a:hover {
-    color: grey;
+  color: grey;
+  text-shadow: 1px 1px #003d99;
 }
 
 /** Intro Points **/
@@ -69,8 +70,8 @@ a:hover {
 }
 
 #mission {
-    margin: 0 auto;
-    width: 75%;
+  margin: 0 auto;
+  width: 75%;
 }
 
 #mission h2 {
@@ -117,17 +118,20 @@ iframe {
   text-align: center;
 }
 
-#packages ul, ol {
+#packages ul,
+ol {
   text-align: center;
   list-style: none;
-  padding: .25em 0;
+  padding: 0.25em 0;
 }
 
 #packages ul li {
   padding-bottom: 1em;
 }
 
-#sous, #head, #executive {
+#sous,
+#head,
+#executive {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,7 +151,7 @@ iframe {
 
 .price {
   font-size: 1.5em;
-      text-shadow: .05em .05em grey;
+  text-shadow: 0.05em 0.05em grey;
 }
 
 .btn {
@@ -157,7 +161,7 @@ iframe {
   height: 40px;
   font-size: 1em;
   text-transform: uppercase;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   background-color: #cc8a20;
   border-radius: 5px;
   cursor: pointer;
@@ -165,7 +169,7 @@ iframe {
 
 .btn:hover {
   background-color: #ff531a;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .clicked {
@@ -208,7 +212,7 @@ iframe {
 
 #submit:hover {
   background-color: #ff531a;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 /** Media queries **/
@@ -217,37 +221,39 @@ iframe {
   header h1 {
     float: clear;
     margin: 0 auto;
-}
+  }
   nav ul {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0 50px;
   }
-  
+
   nav ul li {
     padding: 5px;
   }
-  
+
   #right-edge {
     margin: 0;
   }
-  
+
   #mission {
     width: 95%;
   }
-  
+
   #demo {
     width: 80%;
   }
-  
+
   #packages {
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  
-  #sous, #head, #executive {
+
+  #sous,
+  #head,
+  #executive {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
@@ -262,29 +268,26 @@ iframe {
     margin: 0 auto;
     height: 85px;
   }
-  
+
   .logo img {
     display: none;
   }
-  
+
   header h1 {
     width: 100%;
     text-align: center;
     margin: 0 auto;
     padding-top: 0;
   }
-  
+
   header ul {
     margin: 0 auto;
     text-align: center;
     flex-direction: row;
   }
-  
-  
-  
+
   #intro {
     margin-top: 120px;
     text-align: center;
   }
-  
 }
