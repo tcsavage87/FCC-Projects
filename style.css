@@ -1,0 +1,46 @@
+html {
+  font-family: Georgia, serif;
+  text-align: center;
+  min-width: 320px;
+  color: #222;
+}
+
+main {
+	margin: .5em 1em;
+  padding: 1em 0em;
+}
+
+#img-div {
+  background: #9aa;
+  padding: 1em 1em;
+
+}
+
+img {
+  margin:auto;
+  min-width: 40%;
+  max-width: 60%;
+  display: block;
+}
+
+#tribute-info {
+  background: white;
+  width: 100%;
+  margin: 1em auto;
+  padding: .25em;
+}
+
+#timeline-header {
+ text-shadow: 1px 1px 1px gray;
+}
+
+ul {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.75em;
+}
+
+footer {
+  font-size: .8em;
+}
