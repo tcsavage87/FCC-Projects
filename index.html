@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Jazz Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+	</head>
+
+	<body>
+    <div id="top">
+		  <h1 id="title">Jazz Survey Form</h1>
+    </div>
+
+		<form id="survey-form">
+      		<p id="description">Let us know about your interest in jazz music!</p>
+      		<div class="row">
+      			<div class="left">
+					<label id="name-label" for="name">Name: </label>
+				</div>	
+			
+				<div class="right">
+					<input id="name" type="text" name="name" placeholder="Enter your name" required>
+				</div>
+        	</div>
+    
+	        <div class="row">
+	      		<div class="left">
+					<label id="email-label" for="email">Email: </label>
+				</div>
+				<div class="right">	
+					<input id="email" type="email" name="email" placeholder="Enter your email" required>
+				</div>
+	      	</div>
+				
+	      <div class="row">
+	      	<div class="left">
+				<label id="number-label" for="number">Number of years listening to jazz: </label>
+			</div>
+
+			<div class="right">
+				<input id="number" type="number" name="experience" placeholder="Years" min="0" max="100">
+			</div>
+	      </div>
+	      
+	      <div class="row">
+	      	<div class="left">
+				<label id="dropdown-label" for="dropdown">Select your favorite jazz era:</label>
+			</div>
+			<div class="right">
+				<select id="dropdown" name="favoriteEra" required>
+					<option disabled selected value>Please choose below</option>
+					<option value="early">Early Jazz - 1920s</option>
+					<option value="swing">Swing Era - 1930s-40s</option>
+					<option value="bebop">Bebop - 1940s-50s</option>
+					<option value="hardbop">Hard Bop - 1950s</option>
+					<option value="free">Free Jazz/Avant Garde - 1960s</option>
+					<option value="fusion">Jazz Fusion - 1960s-70s</option>
+					<option value="smooth">Smooth Jazz - 1980s-present</option>
+					<option value="modern">Modern Jazz</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+	      </div>
+
+	      <div class="row">
+	      	<div class="left">
+				<label id="radio-label" for="radio">Do you play an instrument?</label>
+			</div>
+
+			<div class="right">
+		        <ul>
+		          <li>
+		            <label><input name="radio-buttons" type="radio" value="1">Yes</label></li>
+		          <li>
+		            <label><input name="radio-buttons" type="radio" value="2">No</label></li>
+		        </ul>
+	    	</div>	
+	      </div>
+	      
+	      <div class="row">
+	      	<div class="left">
+				<label id="checkbox-label" for="instrument">Select your favorite jazz instruments: </label>
+			</div>
+
+			<div class="right">
+		        <ul id="checklist">
+		          <li>
+		            <label><input name="instrument" value="1" type="checkbox">Saxophone</label></li>
+		          <li>
+		            <label><input name="instrument" value="2" type="checkbox">Trumpet</label></li>
+		          <li>
+		            <label><input name="instrument" value="3" type="checkbox">Trombone</label></li>
+		          <li>
+		            <label><input name="instrument" value="4" type="checkbox">Piano</label></li>
+		          <li>
+		            <label><input name="instrument" value="5" type="checkbox">Guitar</label></li>
+		          <li>
+		            <label><input name="instrument" value="6" type="checkbox">Bass</label>
+		        	</li>
+		          <li>
+		            <label><input name="instrument" value="7" type="checkbox">Drums</label></li>
+		          <li>
+		            <label><input name="instrument" value="8" type="checkbox">Other</label></li>
+		        </ul>
+			</div>
+	      </div>
+	      
+	    <div class="row">
+	    	<div class="left">
+	      		<label id="label-comments" for="comments">Any additional thoughts on jazz? </label>
+	        </div>
+	        <div class="right">
+	    		<textarea id="comments" name="comment" placeholder="Comments?"></textarea>
+	        </div>
+	          
+	    </div>
+	      
+	    <button id="submit" type="submit">Submit</button>
+
+		</form>
+
+	</body>
+
+</html>
