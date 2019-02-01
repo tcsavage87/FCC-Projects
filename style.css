@@ -1,0 +1,293 @@
+html {
+  font-family: "Asap", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+/** Header st yling **/
+
+header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo img {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 2em;
+}
+
+header h1 {
+  flex-direction: row;
+  color: #fff;
+  text-shadow: 2px 2px #8585ad;
+  float: clear;
+  margin: 0 auto;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#right-edge {
+  margin-right: 5em;
+}
+
+a:hover {
+  color: grey;
+  text-shadow: 1px 1px #003d99;
+}
+
+/** Intro Points **/
+
+#intro {
+  margin-top: 150px;
+}
+
+#mission {
+  margin: 0 auto;
+  width: 75%;
+}
+
+#mission h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/** Video section **/
+
+#demo {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+#iframe-container {
+  overflow: hidden;
+  padding-top: 35px;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+/** Knife Packages **/
+
+#packages {
+  margin: 2em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#package-header {
+  text-align: center;
+}
+
+#packages ul,
+ol {
+  text-align: center;
+  list-style: none;
+  padding: 0.25em 0;
+}
+
+#packages ul li {
+  padding-bottom: 1em;
+}
+
+#sous,
+#head,
+#executive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.title {
+  color: #003d99;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 1.5em;
+  text-shadow: 0.05em 0.05em grey;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  background-color: #cc8a20;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff531a;
+  transition: background-color 0.5s;
+}
+
+.clicked {
+  background-color: green;
+}
+
+/** Email form **/
+
+#info {
+  margin-top: 5em;
+  text-align: center;
+}
+
+#email {
+  display: block;
+  padding: 5px;
+  margin: 1em auto;
+  max-width: 250px;
+  width: 100%;
+  height: 20px;
+  border: 1px solid gray;
+}
+
+#submit {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  padding: 5px 10px;
+  height: 40px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  background-color: #cc8a20;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #ff531a;
+  transition: background-color 0.5s;
+}
+
+/** Media queries **/
+
+@media (max-width: 768px) {
+  header h1 {
+    float: clear;
+    margin: 0 auto;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 50px;
+  }
+
+  nav ul li {
+    padding: 5px;
+  }
+
+  #right-edge {
+    margin: 0;
+  }
+
+  #mission {
+    width: 95%;
+  }
+
+  #demo {
+    width: 80%;
+  }
+
+  #packages {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sous,
+  #head,
+  #executive {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 506px) {
+  #header {
+    flex-wrap: wrap;
+    padding-top: 1em;
+    margin: 0 auto;
+    height: 85px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  header ul {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  #intro {
+    margin-top: 120px;
+    text-align: center;
+  }
+}

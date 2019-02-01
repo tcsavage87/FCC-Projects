@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cutting Edge Cutlery</title>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,500" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://github.com/tcsavage87/FCC-Product-Landing/blob/master/Images/6554.jpg?raw=true"/>
+      </div>
+      
+      <h1 id="logo-title">Cutting Edge Cutlery</h1>
+
+          
+      <nav id="nav-bar">
+        <ul>
+          <a href="#intro" class="nav-link"><li>Our Mission</li></a>
+          <a href="#video" class="nav-link"><li>Knife Care</li></a>
+          <a href="#packages" id="right-edge" class="nav-link"><li>Packages</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro">
+          <div id="mission">
+            <h2>Our Mission</h2>
+
+            <h3 class="title">Origin</h3>
+            <p>This company was started by former chefs who truly understand the value of good knives.  We believe that knives are the backbone of a good meal and should last a lifetime.</p>
+
+            <h3 class="title">Craftsmanship</h3>
+            <p>In an effort to create the highest quality knives, we work with skilled artisans from around the world.  We pay our employees a fair wage for their unparalleled talents.  Our metal is premium grade, stain-free, and meant to stand the test of time.</p>
+        
+            <h3 class="title">Customer Service</h3>
+            <p>Because we believe so strongly in the quality of our knives, we offer a lifetime money-back guarantee.  We also offer a knife sharpening subscription service, to keep you on the cutting edge in the kitchen.</p>
+          </div>
+    </section>
+
+    <section id="demo">
+      <h2>Knife Care</h2>
+      <div id="iframe-container">
+      <iframe id="video" src="https://www.youtube.com/embed/SBn1i9YqN1k" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </section>
+    
+        <h2 id="package-header">Packages</h2>
+        <section id="packages">
+
+          <div id="sous">
+              <h1 class="title">Sous Chef</h1>
+              <h3 class="price">$100</h3>
+              <ul>
+                <li>Great set for the beginning chef</li>
+                <li>Set contains 5 beautiful knives</li>
+              </ul>
+              <button class="btn" id="sous-btn" onclick="changeBtn1();">Select</button>
+          </div>
+
+          <div id="head">
+              <h1 class="title">Head Chef</h1>
+              <h3 class="price">$250</h3>
+              <ul>
+                <li>Perfect package for the avid home cook</li>
+                <li>Package contains 9 gorgeous knives</li>
+              </ul>
+              <button class="btn" id="head-btn" onclick="changeBtn2();">Select</button>
+          </div>
+
+          <div id="executive">
+              <h1 class="title">Executive Chef</h1>
+              <h3 class="price">$500</h3>
+              <ul>
+                <li>Designed for professional chefs</li>
+                <li>Contains 15 knives for any occasion</li>
+              </ul>
+              <button  class="btn" id="exec-btn" onclick="changeBtn3();">Select</button>
+          </div>
+        </section>
+
+      <section id="info">
+          <h2>Want More Information?</h2>
+    
+      <form id="form" onsubmit="thanks();">
+        <input id="email" type="email" name="email" placeholder="Please enter your email address" required/>
+        <input id="submit" type="submit" value="Upgrade your Kitchen!"/>
+      </form>
+      </section>
+
+    <footer>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+
+
+</html>
